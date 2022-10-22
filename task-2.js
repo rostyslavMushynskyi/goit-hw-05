@@ -1,11 +1,13 @@
 class User {
-  constructor(usersData) {
-    this.usersData = usersData;
+  constructor({ name, age, followers }) {
+    this.name = name;
+    this.age = age;
+    this.followers = followers;
   }
 
   getInfo() {
     console.log(
-      `User ${this.usersData.name} is ${this.usersData.age} years old and has ${this.usersData.followers} followers`
+      `User ${this.name} is ${this.age} years old and has ${this.followers} followers`
     );
   }
 }

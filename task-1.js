@@ -1,11 +1,12 @@
 Account.prototype.getInfo = function () {
-  console.log(`Login: ${this.data.login}, Email: ${this.data.email}`);
+  console.log(`Login: ${this.login}, Email: ${this.email}`);
 };
 
 console.log(Account.prototype.getInfo); // function
 
-function Account(data) {
-  this.data = data;
+function Account({ login, email }) {
+  this.login = login;
+  this.email = email;
 }
 
 const mango = new Account({
